@@ -10,7 +10,7 @@
 
 - ref: https://www.npmjs.com/package/next-connect
 
-## graphql settins
+## graphql setting
 
 1. apollo server setup
    https://www.npmjs.com/package/apollo-server-micro
@@ -58,3 +58,18 @@ yarn add @mantine/core @mantine/hooks @mantine/form  @mantine/next
 
 yarn add tabler-icons-react
 ```
+
+
+## redux ssr 적용 밑 사용예제 첨부
+
+
+## tailwind css 
+- ref: https://tailwindcss.com/docs/guides/nextjs
+```
+yarn add -D tailwindcss postcss autoprefixer
+
+```
+
+## tailwind/form 적용
+클래스명 정렬
+- Ref: https://github.com/tailwindlabs/tailwindcss-forms
