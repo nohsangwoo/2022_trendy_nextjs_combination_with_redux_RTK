@@ -73,3 +73,8 @@ yarn add -D tailwindcss postcss autoprefixer
 ## tailwind/form 적용
 클래스명 정렬
 - Ref: https://github.com/tailwindlabs/tailwindcss-forms
+
+
+## mui apply
+
+ yarn add @mui/icons-material @mui/material @mui/styles @mui/x-date-pickers
