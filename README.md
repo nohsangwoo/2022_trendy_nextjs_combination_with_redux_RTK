@@ -88,6 +88,8 @@ yarn add @mui/icons-material @mui/material @mui/styles @mui/x-date-pickers
 $ yarn add prisma typescript ts-node @types/node --save-dev
 ```
 
+- yarn add @prisma/client
+
 ## planetscale
 
 - ref: https://planetscale.com/docs/concepts/planetscale-environment-setup
