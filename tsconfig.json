@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
+    "sourceMap": true,
+    "outDir": "dist",
+    "strict": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es2018",
     "lib": ["dom", "dom.iterable", "esnext", "esnext.asynciterable"],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": false,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,

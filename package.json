@@ -20,6 +20,7 @@
     "@mui/material": "^5.10.7",
     "@mui/styles": "^5.10.7",
     "@mui/x-date-pickers": "^5.0.3",
+    "@prisma/client": "4.4.0",
     "@redux-devtools/extension": "^3.2.3",
     "@reduxjs/toolkit": "^1.8.5",
     "@tanstack/react-query": "^4.6.1",
@@ -38,6 +39,7 @@
     "next": "^12.3.1",
     "next-connect": "^0.12.2",
     "next-redux-wrapper": "^8.0.0",
+    "prisma": "^4.4.0",
     "react": "18.2.0",
     "react-calendar": "^3.9.0",
     "react-dom": "18.2.0",
@@ -48,6 +50,7 @@
     "reflect-metadata": "^0.1.13",
     "styled-components": "^5.3.6",
     "tabler-icons-react": "^1.51.0",
+    "ts-node": "^10.9.1",
     "type-graphql": "^1.1.1",
     "uuid": "^9.0.0",
     "yup": "^0.32.11",
@@ -62,7 +65,7 @@
     "@tailwindcss/forms": "^0.5.3",
     "@types/micro-cors": "^0.1.2",
     "@types/mysql": "^2.15.21",
-    "@types/node": "18.0.0",
+    "@types/node": "^18.8.3",
     "@types/react": "18.0.14",
     "@types/react-dom": "18.0.5",
     "autoprefixer": "^10.4.12",
@@ -72,6 +75,6 @@
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
     "tailwindcss": "^3.1.8",
-    "typescript": "^4.7.4"
+    "typescript": "^4.8.4"
   }
 }
