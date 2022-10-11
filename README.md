@@ -76,6 +76,11 @@ yarn add -D tailwindcss postcss autoprefixer
 
 - Ref: https://github.com/tailwindlabs/tailwindcss-forms
 
+`
+// 요거 두개 설치해야 프리티어랑 연동됨
+$ yarn add -D prettier prettier-plugin-tailwindcss
+`
+
 ## mui apply
 
 yarn add @mui/icons-material @mui/material @mui/styles @mui/x-date-pickers
