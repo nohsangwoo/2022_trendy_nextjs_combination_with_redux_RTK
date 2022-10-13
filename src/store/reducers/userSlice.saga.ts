@@ -1,12 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit'
-interface InitialState {
+export interface UserState {
   userInfo?: any
   isLogin: boolean
   isConfirmed: boolean
   isVerify: boolean
 }
 
-const initialState: InitialState = {
+const initialState: UserState = {
   userInfo: [],
   isLogin: false,
   isConfirmed: false,

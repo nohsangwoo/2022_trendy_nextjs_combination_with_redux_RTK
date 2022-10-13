@@ -6,14 +6,14 @@ import {
 import { HYDRATE } from 'next-redux-wrapper'
 import { RootState } from '../store'
 
-interface InitialState {
+export interface CounterState {
   number: number
   noticount: number
   dummyNumber: number[]
   sign_company: string
 }
 
-const initialState: InitialState = {
+const initialState: CounterState = {
   number: 0,
   noticount: 0,
   dummyNumber: Array(100)
