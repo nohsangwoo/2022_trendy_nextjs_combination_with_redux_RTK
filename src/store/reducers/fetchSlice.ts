@@ -20,7 +20,7 @@ export type FetchState = {
 
 const initialState: FetchState = {
   todos: [],
-  error: undefined,
+  error: '',
   isSuccess: false,
   isLoading: false,
   where: '',

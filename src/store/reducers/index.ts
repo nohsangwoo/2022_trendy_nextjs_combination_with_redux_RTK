@@ -8,7 +8,7 @@ import fetchSlice, { FetchState } from '@src/store/reducers/fetchSlice'
 export interface ReducerStates {
   counter: CounterState
   user: UserState
-  // fetchs: FetchState
+  fetchs: FetchState
 }
 
 // for server side
@@ -29,7 +29,7 @@ const rootReducer = (
   return combineReducers({
     counter: counterSlice.reducer,
     user: userSlice.reducer,
-    // fetchs: fetchSlice.reducer,
+    fetchs: fetchSlice.reducer,
   })(state, action)
 }
 
