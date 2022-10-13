@@ -27,16 +27,22 @@ const counterSlice = createSlice({
   name: 'counter',
   initialState,
   reducers: {
+    basicIncrease(state, action) {
+      state.number = state.number + action.payload
+    },
+    basicDecrease(state, action) {
+      state.number = state.number - action.payload
+    },
     increase(state, action: PayloadAction<number>) {
       state.number = state.number + action.payload
     },
     decrease(state, action: PayloadAction<number>) {
       state.number = state.number - action.payload
     },
-    totalCountDecrease(state) {
+    totalCountDecrease(state, action) {
       state.noticount = state.noticount - 1
     },
-    setNotiListCount(state, action: PayloadAction<number>) {
+    setNotiListCount(state, action) {
       state.noticount = action.payload
     },
     setSign_company(state, action: PayloadAction<string>) {
