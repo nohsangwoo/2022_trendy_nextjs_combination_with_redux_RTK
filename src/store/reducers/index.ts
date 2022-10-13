@@ -1,12 +1,14 @@
 import { PayloadAction } from '@reduxjs/toolkit'
 import { HYDRATE } from 'next-redux-wrapper'
 import { AnyAction, CombinedState, combineReducers } from 'redux'
-import counterSlice, { CounterState } from './counterSlice.saga'
-import userSlice, { UserState } from './userSlice.saga'
+import counterSlice, { CounterState } from './counterSlice'
+import userSlice, { UserState } from './userSlice'
+import fetchSlice, { FetchState } from '@src/store/reducers/fetchSlice'
 
 export interface ReducerStates {
   counter: CounterState
   user: UserState
+  fetchs: FetchState
 }
 
 // for server side
@@ -27,6 +29,7 @@ const rootReducer = (
   return combineReducers({
     counter: counterSlice.reducer,
     user: userSlice.reducer,
+    fetchs: fetchSlice.reducer,
   })(state, action)
 }
 

@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import { Component } from 'react'
 import { RootState, wrapper } from '@src/store/store'
-import counterSlice from '@src/store/reducers/counterSlice.saga'
+import counterSlice from '@src/store/reducers/counterSlice'
 import { GetServerSideProps } from 'next'
 // 여기에선 class 형식의 react component에서 redux를 사용하는 방법을 보여준다.
 // 또한 hoc의 개념을 알아본다.

@@ -4,6 +4,7 @@ import {
   PayloadAction,
 } from '@reduxjs/toolkit'
 import { HYDRATE } from 'next-redux-wrapper'
+import { decreaseAsync, increaseAsync } from '../actions/counterActions'
 import { RootState } from '../store'
 
 export interface CounterState {
@@ -42,7 +43,7 @@ const counterSlice = createSlice({
       state.sign_company = action.payload
     },
   },
-  /*  extraReducers: builder =>
+  extraReducers: builder =>
     builder
       .addCase(increaseAsync.pending, (state, action) => {})
       .addCase(increaseAsync.fulfilled, (state, action) => {})
@@ -60,7 +61,7 @@ const counterSlice = createSlice({
         },
       )
 
-      .addDefaultCase((state, action) => {}), */
+      .addDefaultCase((state, action) => {}),
 })
 
 export default counterSlice

@@ -1,14 +1,18 @@
 import counterSlice, {
   allCounterStateSelector,
   noticountSelector,
-} from '@src/store/reducers/counterSlice.saga'
-import { RootState, useAppDispatch, useAppSelector, wrapper } from '@src/store/store'
+} from '@src/store/reducers/counterSlice'
+import {
+  RootState,
+  useAppDispatch,
+  useAppSelector,
+  wrapper,
+} from '@src/store/store'
 import { GetServerSideProps, GetServerSidePropsContext } from 'next/types'
 import { shallowEqual, useDispatch, useSelector } from 'react-redux'
 
 function Home() {
   const { num, noti } = useSelector(allCounterStateSelector)
-  // const asdfasdf =useSelector((root:RootState))
 
   const dispatch = useAppDispatch()
 
