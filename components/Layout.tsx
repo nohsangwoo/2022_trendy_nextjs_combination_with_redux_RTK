@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { ReactNode, useState } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import {
@@ -14,7 +14,10 @@ import {
 } from '@mantine/core'
 import { Home, DogBowl } from 'tabler-icons-react'
 
-export default function Layout({ children }) {
+interface Props {
+  children: ReactNode
+}
+export default function Layout({ children }: Props) {
   const theme = useMantineTheme()
   const [opened, setOpened] = useState(false)
 

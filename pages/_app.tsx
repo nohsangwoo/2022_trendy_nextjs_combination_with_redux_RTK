@@ -20,16 +20,18 @@ import { AdapterMoment } from '@mui/x-date-pickers/AdapterMoment'
 import theme from '@src/theme'
 
 import '../styles/globals.css'
+import { AppProps } from 'next/app'
 // import { Provider as ReduxProvider } from 'react-redux'
 // import type { AppProps } from 'next/app'
 
 const persistor = persistStore(store)
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <LocalizationProvider dateAdapter={AdapterDateFns}>
         <QueryClientProvider client={queryClient}>
+          {/* @ts-ignore */}
           <Hydrate state={pageProps.dehydratedState}>
             <PersistGate loading={null} persistor={persistor}>
               <Layout>

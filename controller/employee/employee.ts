@@ -1,5 +1,5 @@
 import { excuteQuery } from '@config/db'
-import { executeQueryWithConnect } from '@database/database'
+// import { executeQueryWithConnect } from '@database/database'
 
 export const getAllEmployees = async (req: any, res: any) => {
   // 첫번째 방법으로 데이터 가져오기 - 변경해야할 부분이 조금 많음...
@@ -13,7 +13,7 @@ export const getAllEmployees = async (req: any, res: any) => {
     const query = `SELECT CATEGORY FROM videohelp.THISTORY WHERE HISTORYINFO LIKE "%${email}%" order by CDATETIME DESC limit 10;`
     return query
   }
-  let result2 = await executeQueryWithConnect(getLatestHistory('nsgr12'))
+  // let result2 = await executeQueryWithConnect(getLatestHistory('nsgr12'))
 
   // console.log('result data: ', result)
   console.log('result data2: ', result)

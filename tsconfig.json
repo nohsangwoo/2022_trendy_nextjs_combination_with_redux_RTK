@@ -1,14 +1,12 @@
 {
   "compilerOptions": {
-    "sourceMap": true,
-    "outDir": "dist",
-    "strict": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es2018",
     "lib": ["dom", "dom.iterable", "esnext", "esnext.asynciterable"],
     "allowJs": true,
     "skipLibCheck": true,
+    "strict": false,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -20,12 +18,25 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
+      "@pages/*": ["pages/*"],
+      "@components/*": ["components/*"],
       "@controller/*": ["controller/*"],
       "@config/*": ["config/*"],
       "@database/*": ["database/*"],
-      "@src/*": ["src/*"]
+      "@src/*": ["src/*"],
+      "@pm/*": ["prisma/*"],
+      "@client/*": ["clients/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/utils/makepwd.js",
+    "src/theme/index.js",
+    "components/logo.js",
+    "pages/middleware.js",
+    "pages/middleware.ts"
+  ],
   "exclude": ["node_modules"]
 }

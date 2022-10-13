@@ -1,4 +1,4 @@
-import { dehydrate, useQuery } from 'react-query'
+import { dehydrate, useQuery } from '@tanstack/react-query'
 import Head from 'next/head'
 import Link from 'next/link'
 import { Grid, Card, Image, Text, Title } from '@mantine/core'
@@ -25,7 +25,7 @@ export default function Home() {
   const { data } = useQuery(['dogs'], () => getDogs())
   const { data: shDt } = useQuery(['sayhello'], () => getDogs())
   const { data: sjhDt } = useQuery(['sayjusthello'], () => getDogs())
-  const test = useClientValue('test', 'test')
+  const test = useClientValue(['test'], 'test')
 
   console.log('test:', test)
 
