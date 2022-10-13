@@ -24,7 +24,8 @@ const ReactQueryHook = () => {
     // type interface 설명
     // server state설명
     // 결국 server state를 가져와서 redux state에 저장하는 것이다.
-    fetchApi('https://jsonplaceholder.typicode.com/todos', 'AxiosUasage.tsx')
+    // fetchApi('https://jsonplaceholder.typicode.com/todos', 'AxiosUasage.tsx')
+    getFetchTodos()
   }, [dispatch])
 
   useEffect(() => {

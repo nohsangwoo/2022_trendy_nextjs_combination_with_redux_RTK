@@ -76,10 +76,7 @@ yarn add -D tailwindcss postcss autoprefixer
 
 - Ref: https://github.com/tailwindlabs/tailwindcss-forms
 
-`
-// 요거 두개 설치해야 프리티어랑 연동됨
-$ yarn add -D prettier prettier-plugin-tailwindcss
-`
+`// 요거 두개 설치해야 프리티어랑 연동됨 $ yarn add -D prettier prettier-plugin-tailwindcss`
 
 ## mui apply
 
@@ -98,3 +95,5 @@ $ yarn add prisma typescript ts-node @types/node --save-dev
 ## planetscale
 
 - ref: https://planetscale.com/docs/concepts/planetscale-environment-setup
+
+## redux의 initialValue의 값은 undefined가 되어서는 안된다.
