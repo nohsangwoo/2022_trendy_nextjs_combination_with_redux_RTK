@@ -34,9 +34,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           {/* @ts-ignore */}
           <Hydrate state={pageProps.dehydratedState}>
             <PersistGate loading={null} persistor={persistor}>
-              <Layout>
+              {/* <Layout> */}
                 <Component {...pageProps} />
-              </Layout>
+              {/* </Layout> */}
               <ReactQueryDevtools initialIsOpen={false} />
             </PersistGate>
           </Hydrate>
